@@ -1,17 +1,31 @@
 body, html {
+    background-color: #444444;
     height: 100%;
     margin: 0;
+}
+* {
+  box-sizing: border-box;
 }
 .banner{
     width: 100%;
     height: 100vh;
     background-image: url(images/Background.jpg);
-    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 }
+.back{
+    width: 100%;
+    height: 100vh;
+    background-color: #444444;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
 .navbar {
     width: 100%;
     margin: auto;
@@ -111,3 +125,49 @@ button:hover {
     font-family: 'Noto Sans Ethiopic', sans-serif;
     font-weight: 150;
     font-size: 20px;}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pictures {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
