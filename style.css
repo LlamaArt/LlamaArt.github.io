@@ -146,6 +146,11 @@ button:hover {
   width: 25%;
 }
 
+.columnPaint {
+  float: left;
+  width: 50%;
+}
+
 /* Clear floats after rows */
 .row:after {
   content: "";
